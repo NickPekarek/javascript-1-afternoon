@@ -38,13 +38,17 @@ let groceries = ['apples','milk','eggs','bread'];
 //doubleCheck should return the array.
 
 function doubleCheck(arr){
-  let contain;
+  let contain=false;
   for(let i=0; i < arr.length; i++){
-    if (arr[i] === "chocolate"){contain= true}
+    if (arr[i] === 'chocolate'){
+      contain= true}
   }
-  if(contain){return arr}
-  else {return arr.push("chocolate")}
-}
+  if(contain){
+    return arr}
+  else { 
+    arr.push('chocolate')}
+  return arr;
+};
 
 //////////////////PROBLEM 5////////////////////
 
@@ -57,13 +61,13 @@ var dog = {
   name: "Roofus",
   color: "white",
   age: 2,
-  goodBoy = true
+  goodBoy: true
 };
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-dog.name= devMountainClassPet;
+let devMountainClassPet = dog.name ;
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
@@ -159,13 +163,13 @@ function pond() {
 let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "nautical", "squeaky", "realDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "sailorDuck", "rubberDuck", "fluffy"];
 
 //////////////////PROBLEM 10////////////////////
 
